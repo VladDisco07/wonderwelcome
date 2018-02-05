@@ -24,16 +24,7 @@ client.on('guildMemberAdd', member => {
   // Do nothing if the channel wasn't found on this server
   if (!channel) return;
   // Send the message, mentioning the member
-  channel.send(`:black_small_square: **Bine ai venit**, ${member}!
-
-Bun venit pe comunitatea Wonderland!
-Sperăm să îți placă această comunitate care a fost muncită și a ajuns foarte sus în trecut, cu ajutorul celor care au intrat pe serverul nostru și au fost activi.
-
-:black_small_square: **Pentru început**:
-
-Pentru inceput, te rugăm să treci pe la canalele:
-- #reguli-si-informatii - Pentru a vedea regulamentul și informațiile
-- #noutati - Pentru a vedea ce am mai adăugat, ce s-a mai întâmplat etc`);
+  channel.send(`[+] ${member}`);
 });
 
 // Log our bot in
